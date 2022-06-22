@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro programa</h1> 
+    <p>primeiro exercício utilizando JavaScript</p>
+    <script>
+        var n1 =  Number(window.prompt('Digite um número')) //string sem o Number.parseInt
+        var n2 = Number(window.prompt('Digite outro número')) //string sem o Number.parseInt (por causa do window.prompt)
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2}, é igual a ${s}`) //o resultado será a CONCATENAÇÃO dos 2 números se não houver o "Number.parseInt" na área do var, pois window.prompt tratará o dado como STRING.
+
+    </script>
+    
+</body>
+</html>
