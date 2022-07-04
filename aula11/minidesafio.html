@@ -14,15 +14,13 @@
 
     <script>
         function verificar() {
-            var nac = window.document.querySelector('input#txtp')
+            var nac = window.document.getElementsByName('txtp')
             var res = document.querySelector('div#res')
-            var txt = String(txtp.value)
 
             if (nac == 'Brasileiro') {
                 res.innerHTML = '<p>Você é <strong>Brasileiro</strong>!</p>'
             } else {
-                res.innerHTML += '<p>Você é Estrangeiro!</p>'
-
+                res.innerHTML = '<p>Você é Estrangeiro!</p>'
             }
             
             
